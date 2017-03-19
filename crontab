@@ -1,0 +1,9 @@
+
+1 * * * *  rm /var/log/trafficking/* -f
+22 */4 * * * /usr/bin/supervisorctl -c /etc/supervisord.conf restart spidermatrix_trackmaster_downloader:0
+22 */4 * * * /usr/bin/supervisorctl -c /etc/supervisord.conf restart spidermatrix_trackmaster_downloader:1
+22 */4 * * * /usr/bin/supervisorctl -c /etc/supervisord.conf restart spidermatrix_trackmaster_downloader:2
+22 */4 * * * /usr/bin/supervisorctl -c /etc/supervisord.conf restart spidermatrix_trackmaster_downloader:3
+22 */4 * * * /usr/bin/supervisorctl -c /etc/supervisord.conf restart spidermatrix_trackmaster_processor:1
+22 */4 * * * /usr/bin/supervisorctl -c /etc/supervisord.conf restart spidermatrix_trackmaster_processor:2
+22 */4 * * * /usr/bin/supervisorctl -c /etc/supervisord.conf restart spidermatrix_trackmaster_scheduler
