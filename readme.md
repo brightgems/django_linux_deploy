@@ -67,10 +67,10 @@ sudo chkconfig nginx on
 ```
 crontab -l
 crontab -e
-# 复制crontab文件内容
+# 澶嶅埗crontab鏂囦欢鍐呭
 ```
 
-- **解决Nginx的connect() to 127.0.0.1:8080 failed (13: Permission denied) while connect**
+- **瑙ｅ喅Nginx鐨刢onnect() to 127.0.0.1:8080 failed (13: Permission denied) while connect**
 ```
 setsebool -P httpd_can_network_connect 1
 ```
