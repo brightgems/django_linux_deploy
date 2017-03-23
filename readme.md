@@ -1,5 +1,6 @@
 # Example configuration of Nginx + uwsgi + django
 
+
 ## Enviroment Setup
 ### Install python packages
 cd <trafficking dir>
@@ -84,6 +85,5 @@ sudo service nginx restart
 sudo rm /var/log/trafficking/* -f
 sudo tail /var/log/nginx/error.log
 ```
-<em>
-Note: if anything wrong, check log file in /var/log/trafficking
-</em>
+
+> my blog: http://qimingxing.me/
